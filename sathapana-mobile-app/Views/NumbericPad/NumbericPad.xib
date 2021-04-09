@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NumbericPad" customModule="sathapana_mobile_app" customModuleProvider="target">
+            <connections>
+                <outlet property="scanButton" destination="31l-RV-IiQ" id="jPF-9p-y0F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Fod-2j-Aem">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icDelete" translatesAutoresizingMaskIntoConstraints="NO" id="yVR-tb-bK1">
+                    <rect key="frame" x="321" y="802" width="33.5" height="23"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mgW-xR-W08">
+                    <rect key="frame" x="20" y="515" width="373.5" height="337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g4Z-zQ-Ahw">
+                            <rect key="frame" x="0.0" y="0.0" width="111" height="337"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfo-cc-RYl">
+                                    <rect key="frame" x="0.0" y="0.0" width="111" height="77"/>
+                                    <subviews>
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynM-Eg-LC4">
+                                            <rect key="frame" x="11" y="4" width="89" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="40"/>
+                                            <state key="normal" title="1">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadowPath" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="GpT-0R-imW"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="ynM-Eg-LC4" firstAttribute="centerY" secondItem="Xfo-cc-RYl" secondAttribute="centerY" id="dfY-cf-LkL"/>
+                                        <constraint firstItem="ynM-Eg-LC4" firstAttribute="centerX" secondItem="Xfo-cc-RYl" secondAttribute="centerX" id="fuf-Fp-hQ9"/>
+                                        <constraint firstItem="ynM-Eg-LC4" firstAttribute="width" secondItem="Xfo-cc-RYl" secondAttribute="width" multiplier="0.8" id="gd2-M6-23U"/>
+                                        <constraint firstItem="ynM-Eg-LC4" firstAttribute="height" secondItem="Xfo-cc-RYl" secondAttribute="height" multiplier="0.9" id="oyN-Yi-9u6"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4A5-GV-fTG">
+                                    <rect key="frame" x="0.0" y="87" width="111" height="76.5"/>
+                                    <subviews>
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIn-RA-ZT3">
+                                            <rect key="frame" x="11" y="3.5" width="89" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="40"/>
+                                            <state key="normal" title="4">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadowPath" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="1dI-MG-QZw"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="zIn-RA-ZT3" firstAttribute="width" secondItem="4A5-GV-fTG" secondAttribute="width" multiplier="0.8" id="3gJ-Ky-5Yw"/>
+                                        <constraint firstItem="zIn-RA-ZT3" firstAttribute="centerX" secondItem="4A5-GV-fTG" secondAttribute="centerX" id="Frp-Va-UBp"/>
+                                        <constraint firstItem="zIn-RA-ZT3" firstAttribute="centerY" secondItem="4A5-GV-fTG" secondAttribute="centerY" id="Vcg-p0-sE9"/>
+                                        <constraint firstItem="zIn-RA-ZT3" firstAttribute="height" secondItem="4A5-GV-fTG" secondAttribute="height" multiplier="0.9" id="hOw-7f-a7S"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMG-Z6-MKX">
+                                    <rect key="frame" x="0.0" y="173.5" width="111" height="77"/>
+                                    <subviews>
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhg-pb-E29">
+                                            <rect key="frame" x="11" y="4" width="89" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="40"/>
+                                            <state key="normal" title="7">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadowPath" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="gwb-9D-hDd"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="lhg-pb-E29" firstAttribute="width" secondItem="pMG-Z6-MKX" secondAttribute="width" multiplier="0.8" id="0JE-s2-QXo"/>
+                                        <constraint firstItem="lhg-pb-E29" firstAttribute="centerX" secondItem="pMG-Z6-MKX" secondAttribute="centerX" id="cxK-dZ-NvJ"/>
+                                        <constraint firstItem="lhg-pb-E29" firstAttribute="height" secondItem="pMG-Z6-MKX" secondAttribute="height" multiplier="0.9" id="f0x-Rj-nrj"/>
+                                        <constraint firstItem="lhg-pb-E29" firstAttribute="centerY" secondItem="pMG-Z6-MKX" secondAttribute="centerY" id="yJA-OY-Rq3"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31l-RV-IiQ">
+                                    <rect key="frame" x="0.0" y="260.5" width="111" height="76.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="faceid" catalog="system">
+                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="scanAction:" destination="-1" eventType="touchUpInside" id="zxR-3O-bKP"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yw6-KE-wdZ">
+                            <rect key="frame" x="131" y="0.0" width="111.5" height="337"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ww-i7-HSb">
+                                    <rect key="frame" x="0.0" y="0.0" width="111.5" height="77"/>
+                                    <subviews>
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNW-du-ZV1">
+                                            <rect key="frame" x="11.5" y="4" width="88.5" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="40"/>
+                                            <state key="normal" title="2">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadowPath" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="FiM-zX-b65"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="yNW-du-ZV1" firstAttribute="centerY" secondItem="2ww-i7-HSb" secondAttribute="centerY" id="JT1-JS-NNe"/>
+                                        <constraint firstItem="yNW-du-ZV1" firstAttribute="centerX" secondItem="2ww-i7-HSb" secondAttribute="centerX" id="Zs4-hg-hPm"/>
+                                        <constraint firstItem="yNW-du-ZV1" firstAttribute="width" secondItem="2ww-i7-HSb" secondAttribute="width" multiplier="0.8" id="cR1-NI-Dyh"/>
+                                        <constraint firstItem="yNW-du-ZV1" firstAttribute="height" secondItem="2ww-i7-HSb" secondAttribute="height" multiplier="0.9" id="wYP-1b-G5x"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8e-Ok-aG3">
+                                    <rect key="frame" x="0.0" y="87" width="111.5" height="76.5"/>
+                                    <subviews>
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiS-CL-bJ8">
+                                            <rect key="frame" x="11.5" y="3.5" width="88.5" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="40"/>
+                                            <state key="normal" title="5">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadowPath" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="fYA-YZ-ycr"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="aiS-CL-bJ8" firstAttribute="width" secondItem="P8e-Ok-aG3" secondAttribute="width" multiplier="0.8" id="7kl-dz-XND"/>
+                                        <constraint firstItem="aiS-CL-bJ8" firstAttribute="height" secondItem="P8e-Ok-aG3" secondAttribute="height" multiplier="0.9" id="9kW-cO-n3e"/>
+                                        <constraint firstItem="aiS-CL-bJ8" firstAttribute="centerX" secondItem="P8e-Ok-aG3" secondAttribute="centerX" id="JYr-dM-Fnp"/>
+                                        <constraint firstItem="aiS-CL-bJ8" firstAttribute="centerY" secondItem="P8e-Ok-aG3" secondAttribute="centerY" id="zSD-x6-MrO"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4B-4S-6IF">
+                                    <rect key="frame" x="0.0" y="173.5" width="111.5" height="77"/>
+                                    <subviews>
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgJ-H2-Y38">
+                                            <rect key="frame" x="11.5" y="4" width="88.5" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="40"/>
+                                            <state key="normal" title="8">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadowPath" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="fmL-g4-ddx"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="CgJ-H2-Y38" firstAttribute="width" secondItem="D4B-4S-6IF" secondAttribute="width" multiplier="0.8" id="3v9-S8-DBa"/>
+                                        <constraint firstItem="CgJ-H2-Y38" firstAttribute="centerY" secondItem="D4B-4S-6IF" secondAttribute="centerY" id="68i-qd-ntE"/>
+                                        <constraint firstItem="CgJ-H2-Y38" firstAttribute="centerX" secondItem="D4B-4S-6IF" secondAttribute="centerX" id="TmZ-NP-aYe"/>
+                                        <constraint firstItem="CgJ-H2-Y38" firstAttribute="height" secondItem="D4B-4S-6IF" secondAttribute="height" multiplier="0.9" id="suf-iR-1a4"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIt-ah-DLV">
+                                    <rect key="frame" x="0.0" y="260.5" width="111.5" height="76.5"/>
+                                    <subviews>
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW7-Ju-PaM">
+                                            <rect key="frame" x="11.5" y="3.5" width="88.5" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="40"/>
+                                            <state key="normal" title="0">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadowPath" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="czq-8W-i1D"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="SW7-Ju-PaM" firstAttribute="centerY" secondItem="cIt-ah-DLV" secondAttribute="centerY" id="3ZQ-fU-3Rn"/>
+                                        <constraint firstItem="SW7-Ju-PaM" firstAttribute="centerX" secondItem="cIt-ah-DLV" secondAttribute="centerX" id="Uq1-by-70G"/>
+                                        <constraint firstItem="SW7-Ju-PaM" firstAttribute="width" secondItem="cIt-ah-DLV" secondAttribute="width" multiplier="0.8" id="dPL-vm-T2v"/>
+                                        <constraint firstItem="SW7-Ju-PaM" firstAttribute="height" secondItem="cIt-ah-DLV" secondAttribute="height" multiplier="0.9" id="f1c-Mu-oFz"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-nC-SpO">
+                            <rect key="frame" x="262.5" y="0.0" width="111" height="337"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOX-Zr-dbR">
+                                    <rect key="frame" x="0.0" y="0.0" width="111" height="77"/>
+                                    <subviews>
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgc-w9-CHR">
+                                            <rect key="frame" x="11" y="4" width="89" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="40"/>
+                                            <state key="normal" title="3">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadowPath" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="ew5-CL-IR5"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Kgc-w9-CHR" firstAttribute="height" secondItem="QOX-Zr-dbR" secondAttribute="height" multiplier="0.9" id="3e9-mi-PAP"/>
+                                        <constraint firstItem="Kgc-w9-CHR" firstAttribute="width" secondItem="QOX-Zr-dbR" secondAttribute="width" multiplier="0.8" id="BU5-4X-Bmq"/>
+                                        <constraint firstItem="Kgc-w9-CHR" firstAttribute="centerX" secondItem="QOX-Zr-dbR" secondAttribute="centerX" id="HoZ-Yt-5eV"/>
+                                        <constraint firstItem="Kgc-w9-CHR" firstAttribute="centerY" secondItem="QOX-Zr-dbR" secondAttribute="centerY" id="T6A-eJ-PXh"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22Z-98-EWj">
+                                    <rect key="frame" x="0.0" y="87" width="111" height="76.5"/>
+                                    <subviews>
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpM-44-8q1">
+                                            <rect key="frame" x="11" y="3.5" width="89" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="40"/>
+                                            <state key="normal" title="6">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadowPath" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="9S4-QF-saM"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="xpM-44-8q1" firstAttribute="width" secondItem="22Z-98-EWj" secondAttribute="width" multiplier="0.8" id="0qK-Ue-Gkh"/>
+                                        <constraint firstItem="xpM-44-8q1" firstAttribute="centerX" secondItem="22Z-98-EWj" secondAttribute="centerX" id="5oi-Lq-XBA"/>
+                                        <constraint firstItem="xpM-44-8q1" firstAttribute="height" secondItem="22Z-98-EWj" secondAttribute="height" multiplier="0.9" id="N1T-Ex-6EN"/>
+                                        <constraint firstItem="xpM-44-8q1" firstAttribute="centerY" secondItem="22Z-98-EWj" secondAttribute="centerY" id="eVC-6u-PFf"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcw-9U-z6F">
+                                    <rect key="frame" x="0.0" y="173.5" width="111" height="77"/>
+                                    <subviews>
+                                        <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTd-0q-DUU">
+                                            <rect key="frame" x="11" y="4" width="89" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="40"/>
+                                            <state key="normal" title="9">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.91764705879999997" green="0.93333333330000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadowPath" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="keyTappedWithSender:" destination="-1" eventType="touchUpInside" id="9Cp-9h-V1O"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="aTd-0q-DUU" firstAttribute="centerY" secondItem="xcw-9U-z6F" secondAttribute="centerY" id="0xH-Yr-mKF"/>
+                                        <constraint firstItem="aTd-0q-DUU" firstAttribute="centerX" secondItem="xcw-9U-z6F" secondAttribute="centerX" id="40n-C4-9u0"/>
+                                        <constraint firstItem="aTd-0q-DUU" firstAttribute="height" secondItem="xcw-9U-z6F" secondAttribute="height" multiplier="0.9" id="LHn-y5-Ic7"/>
+                                        <constraint firstItem="aTd-0q-DUU" firstAttribute="width" secondItem="xcw-9U-z6F" secondAttribute="width" multiplier="0.8" id="zq1-Yh-WwO"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZz-4X-Ab4">
+                                    <rect key="frame" x="0.0" y="260.5" width="111" height="76.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="delete_black">
+                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="deleteAction:" destination="-1" eventType="touchUpInside" id="qDi-hb-orP"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="337" id="c4y-B8-vfw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="aHw-Nx-I2g"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yVR-tb-bK1" firstAttribute="height" secondItem="GZz-4X-Ab4" secondAttribute="height" multiplier="0.3" id="27J-yW-y7E"/>
+                <constraint firstItem="yVR-tb-bK1" firstAttribute="width" secondItem="GZz-4X-Ab4" secondAttribute="width" multiplier="0.3" id="Bmb-eP-NZL"/>
+                <constraint firstItem="yVR-tb-bK1" firstAttribute="centerX" secondItem="GZz-4X-Ab4" secondAttribute="centerX" id="GJl-pr-Uqp"/>
+                <constraint firstItem="mgW-xR-W08" firstAttribute="leading" secondItem="aHw-Nx-I2g" secondAttribute="leading" constant="20" id="O72-Cr-qYb"/>
+                <constraint firstItem="aHw-Nx-I2g" firstAttribute="bottom" secondItem="mgW-xR-W08" secondAttribute="bottom" constant="10" id="RJ8-WM-4le"/>
+                <constraint firstItem="aHw-Nx-I2g" firstAttribute="trailing" secondItem="mgW-xR-W08" secondAttribute="trailing" constant="20.5" id="Rt0-dp-cA9"/>
+                <constraint firstItem="yVR-tb-bK1" firstAttribute="centerY" secondItem="GZz-4X-Ab4" secondAttribute="centerY" id="UCe-yA-mzQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-800.00000000000011" y="-206.25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_black" width="29" height="22"/>
+        <image name="faceid" catalog="system" width="128" height="115"/>
+        <image name="icDelete" width="121" height="91"/>
+    </resources>
+</document>

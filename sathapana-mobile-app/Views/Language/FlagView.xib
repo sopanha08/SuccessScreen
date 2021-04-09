@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlagView" customModule="sathapana_mobile_app" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="wmH-sR-GWf" id="MtQ-82-aRn"/>
+                <outlet property="titleLabel" destination="b5a-cp-wgw" id="6Ft-uG-HJa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="southKorea_flag" translatesAutoresizingMaskIntoConstraints="NO" id="wmH-sR-GWf">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="32.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32.5" id="a3i-Qv-3Fz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한국어" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5a-cp-wgw">
+                    <rect key="frame" x="0.0" y="35.5" width="60" height="19.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wmH-sR-GWf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0Ne-pT-7NI"/>
+                <constraint firstItem="wmH-sR-GWf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="701-bW-FTn"/>
+                <constraint firstItem="b5a-cp-wgw" firstAttribute="top" secondItem="wmH-sR-GWf" secondAttribute="bottom" constant="3" id="Ecj-Ti-Zs3"/>
+                <constraint firstAttribute="trailing" secondItem="wmH-sR-GWf" secondAttribute="trailing" id="HEn-Rn-MX1"/>
+                <constraint firstItem="b5a-cp-wgw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="K7p-UJ-m6I"/>
+                <constraint firstItem="b5a-cp-wgw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="PMn-oU-zKT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b5a-cp-wgw" secondAttribute="trailing" id="g9R-kg-THm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="49.275362318840585" y="103.45982142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="southKorea_flag" width="53" height="35"/>
+    </resources>
+</document>

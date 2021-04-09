@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="sathapana_mobile_app" customModuleProvider="target">
+            <connections>
+                <outlet property="pageControl" destination="vZV-4n-heb" id="51D-Bd-Pxl"/>
+                <outlet property="scrollView" destination="ZU4-YO-sXv" id="C62-PV-2uV"/>
+                <outlet property="skipButton" destination="aGP-ke-Q8B" id="0yR-4l-7Co"/>
+                <outlet property="view" destination="1Aa-lT-gek" id="Bz0-Cm-aIY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1Aa-lT-gek">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZU4-YO-sXv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="780"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="vZV-4n-heb">
+                    <rect key="frame" x="146" y="710" width="122.5" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="hwm-4j-Aua"/>
+                    </constraints>
+                    <color key="currentPageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="pageChanged:" destination="-1" eventType="valueChanged" id="nSS-Wq-1l5"/>
+                    </connections>
+                </pageControl>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner_white" translatesAutoresizingMaskIntoConstraints="NO" id="hZL-3I-gzZ">
+                    <rect key="frame" x="124" y="546" width="290" height="235"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="235" id="NMY-WM-IVp"/>
+                        <constraint firstAttribute="width" constant="290" id="d3V-w0-owc"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGP-ke-Q8B">
+                    <rect key="frame" x="31" y="790" width="30" height="30"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Skip">
+                                <attributes>
+                                    <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" metaFont="system" size="15"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="didTapSkip:" destination="-1" eventType="touchUpInside" id="to5-Qy-Rfe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Gcq-LE-zQV"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZU4-YO-sXv" firstAttribute="trailing" secondItem="Gcq-LE-zQV" secondAttribute="trailing" id="00G-nt-DYz"/>
+                <constraint firstItem="ZU4-YO-sXv" firstAttribute="bottom" secondItem="hZL-3I-gzZ" secondAttribute="bottom" constant="-1" id="9oI-oS-2OR"/>
+                <constraint firstItem="ZU4-YO-sXv" firstAttribute="leading" secondItem="Gcq-LE-zQV" secondAttribute="leading" id="B0h-fU-yY1"/>
+                <constraint firstItem="Gcq-LE-zQV" firstAttribute="trailing" secondItem="hZL-3I-gzZ" secondAttribute="trailing" id="ItU-ec-x3W"/>
+                <constraint firstItem="aGP-ke-Q8B" firstAttribute="top" secondItem="vZV-4n-heb" secondAttribute="bottom" constant="50" id="JVk-nQ-01I"/>
+                <constraint firstItem="Gcq-LE-zQV" firstAttribute="bottom" secondItem="aGP-ke-Q8B" secondAttribute="bottom" constant="42" id="P8T-c4-DxT"/>
+                <constraint firstItem="vZV-4n-heb" firstAttribute="centerX" secondItem="1Aa-lT-gek" secondAttribute="centerX" id="dEm-y2-9pt"/>
+                <constraint firstItem="ZU4-YO-sXv" firstAttribute="top" secondItem="1Aa-lT-gek" secondAttribute="top" id="j2r-17-Z2L"/>
+                <constraint firstItem="aGP-ke-Q8B" firstAttribute="leading" secondItem="Gcq-LE-zQV" secondAttribute="leading" constant="31" id="m2D-FO-woi"/>
+                <constraint firstItem="aGP-ke-Q8B" firstAttribute="top" secondItem="ZU4-YO-sXv" secondAttribute="bottom" constant="10" id="yZu-99-ZZe"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="corner_white" width="291.5" height="235"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

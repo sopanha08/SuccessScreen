@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseLanguageView" customModule="sathapana_mobile_app" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomStackView" destination="Wjn-bx-7wn" id="YsK-uW-rKK"/>
+                <outlet property="chooseCityLabel" destination="ZvI-EO-vmv" id="Urq-xq-xBa"/>
+                <outlet property="topStackview" destination="x1a-rj-2Qc" id="um0-uv-mbD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="x1a-rj-2Qc">
+                    <rect key="frame" x="5" y="46.5" width="404" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="i2V-3u-tFH"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your language " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvI-EO-vmv">
+                    <rect key="frame" x="134.5" y="0.0" width="145" height="16.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16.5" id="XhJ-gp-cXt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Wjn-bx-7wn">
+                    <rect key="frame" x="5" y="132.5" width="404" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="qDZ-5p-Lwz"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wjn-bx-7wn" secondAttribute="trailing" constant="5" id="2Bz-fJ-d9d"/>
+                <constraint firstItem="ZvI-EO-vmv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3O1-hy-IEI"/>
+                <constraint firstItem="x1a-rj-2Qc" firstAttribute="top" secondItem="ZvI-EO-vmv" secondAttribute="bottom" constant="30" id="8me-IZ-Snm"/>
+                <constraint firstItem="ZvI-EO-vmv" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="jJ3-o5-UGQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="x1a-rj-2Qc" secondAttribute="trailing" constant="5" id="k3o-3O-jqd"/>
+                <constraint firstItem="x1a-rj-2Qc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="msE-Jh-7ov"/>
+                <constraint firstItem="Wjn-bx-7wn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="u20-xY-0kB"/>
+                <constraint firstItem="Wjn-bx-7wn" firstAttribute="top" secondItem="x1a-rj-2Qc" secondAttribute="bottom" constant="36" id="yki-QU-K4O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="76.811594202898561" y="263.50446428571428"/>
+        </view>
+    </objects>
+</document>

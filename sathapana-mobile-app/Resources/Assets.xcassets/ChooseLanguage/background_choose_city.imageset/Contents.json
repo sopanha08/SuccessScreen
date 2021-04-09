@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "background_choose_city.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

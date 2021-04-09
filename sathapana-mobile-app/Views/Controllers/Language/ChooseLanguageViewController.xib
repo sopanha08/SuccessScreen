@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseLanguageViewController" customModule="sathapana_mobile_app" customModuleProvider="target">
+            <connections>
+                <outlet property="languageView" destination="6pm-YR-QUI" id="acl-ag-lec"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_logo" translatesAutoresizingMaskIntoConstraints="NO" id="esE-tk-Hy9">
+                    <rect key="frame" x="0.0" y="156" width="414" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="9gs-7z-oKY"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard_coner_image" translatesAutoresizingMaskIntoConstraints="NO" id="x32-y0-rDl">
+                    <rect key="frame" x="211" y="593" width="204" height="311"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="204" id="DiP-Us-Kr7"/>
+                        <constraint firstAttribute="height" constant="311" id="RMc-4U-HyZ"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_choose_city" translatesAutoresizingMaskIntoConstraints="NO" id="LU2-cz-Uzo">
+                    <rect key="frame" x="10.5" y="274.5" width="393" height="357"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="LU2-cz-Uzo" secondAttribute="height" multiplier="120:109" id="dxC-J9-y1v"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pm-YR-QUI" customClass="ChooseLanguageView" customModule="sathapana_mobile_app" customModuleProvider="target">
+                    <rect key="frame" x="87" y="352" width="240" height="175"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="175" id="7FG-rV-HSQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="esE-tk-Hy9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2Fp-Xn-OIY"/>
+                <constraint firstItem="esE-tk-Hy9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="112" id="2vP-Wo-jJ9"/>
+                <constraint firstAttribute="trailing" secondItem="x32-y0-rDl" secondAttribute="trailing" constant="-1" id="3T6-Ev-gpw"/>
+                <constraint firstAttribute="trailing" secondItem="x32-y0-rDl" secondAttribute="trailing" constant="-1" id="9e1-dc-1JS"/>
+                <constraint firstItem="6pm-YR-QUI" firstAttribute="width" secondItem="LU2-cz-Uzo" secondAttribute="width" multiplier="0.610687" id="Fqn-cd-mxW"/>
+                <constraint firstItem="6pm-YR-QUI" firstAttribute="centerY" secondItem="LU2-cz-Uzo" secondAttribute="centerY" multiplier="0.97" id="GpV-3y-gHH"/>
+                <constraint firstItem="LU2-cz-Uzo" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.95" id="NkI-ha-B0P"/>
+                <constraint firstItem="LU2-cz-Uzo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="a2H-8v-DK8"/>
+                <constraint firstItem="esE-tk-Hy9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cfU-pp-Gs7"/>
+                <constraint firstItem="6pm-YR-QUI" firstAttribute="centerX" secondItem="LU2-cz-Uzo" secondAttribute="centerX" id="fc6-E0-BRJ"/>
+                <constraint firstAttribute="bottom" secondItem="x32-y0-rDl" secondAttribute="bottom" constant="-8" id="jJs-gA-CZ9"/>
+                <constraint firstItem="LU2-cz-Uzo" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="pKe-tR-Hss"/>
+            </constraints>
+            <point key="canvasLocation" x="121.73913043478262" y="104.46428571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_choose_city" width="359" height="327"/>
+        <image name="company_logo" width="205" height="53"/>
+        <image name="onboard_coner_image" width="353" height="523"/>
+    </resources>
+</document>

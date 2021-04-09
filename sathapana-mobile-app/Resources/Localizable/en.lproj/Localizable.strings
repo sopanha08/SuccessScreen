@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  sathapana-mobile-app
+
+  Created by Sovanndy Ul on 24/3/21.
+  
+*/
+
+"welcome_to_sathapana" = "Click on me!";
+
+// Activate Mobile
+"accept_term_conditions" = "Accept term and conditions";
+"placeholder_phone_number" = "Phone number";
+"placeholder_account_number" = "Account number";
+"placeholder_date_of_birth" = " Birth date";
+"activate_mobile_app_title" = "Activate Mobile App";
+"activate_mobile_app_description" = "Please provide basic information which you have create account with Sathapana Bank.";
+
+// Personal Infomations
+"personal_information_title" = "Personal Information";
+"personal_information_description" = "Fill you basic information of you. We don’t share your information to third-party without permission.";
+"placeholder_your_name" = "Your name";
+"placeholder_choose_gender" = "Choose your gender";
+"placeholder_nib_number" = "NID Number";
+"placeholder_nib_expired_at" = "NID Expired At";
+"placeholder_email" = "Email (Optional)";
+
+// Choose City
+"choose_your_language" = "Choose your language";
+ 
+// Login screen
+"login_screen_button_login" = "LOGIN";
+"login_screen_button_activiation" = "ACTIVATION";
+"login_screen_button_create_new_account" = "CREATE NEW ACCOUNT";
+
+// Login with phone number
+"login_with_phone_title" = "Welcome Back";
+"login_with_phone_description" = "We are so happy to see. You can contribute to login for manage your finance.";
+"placeholder_choose_password" = "Password";
+"login_with_phone_forget_password" = "Forget Password?";
+
+// Create new account
+"create_new_account_title" = "Create new account";
+"create_new_account_description" = "Enter your mobile number, we will send you OTP to verify later";
+
+// Scan national id
+"scan_national_id_card_title" = "Scan Your Nation ID";
+"scan_national_id_card_description" = "Align your national ID card with frame below";
+"scan_national_id_card_manual_input" = "Manual Input in ";
+"scan_national_id_card_manual_input_second" = "%d second";
+"scan_national_id_card_take_photo" = "Take Photo & Manual Input";
+
+// Forget Password
+"forget_password_title" = "Forget Password?";
+"forget_paassword_description" = "Please try to momorize requires information to restore your password.";
+
+// Onboarding
+"onboarding_title_1" = "New banking";
+"onboarding_description_1" = "Free advisory service, mobile banking application, visa debit card";
+
+"onboarding_title_2" = "Zero Fees";
+"onboarding_description_2" = "Bank your life. We create something new you have never see it before";
+
+"onboarding_title_3" = "Making it simple";
+"onboarding_description_3" = "We pay attention to all your payments, and find way for saving your money";
+
+// OTP
+"otp_title" = "OTP Verification";
+"otp_description" = "Check your SMS message. We’ve sent you the PIN at";
+"receive_code_label" = "Don’t you receive any code?";
+"resend_button" = "Re-sand Code";
+// Header Enter App Pin
+"enter_pin_title" = "Enter App PIN";
+"enter_pin_description" = "Don’t share this PIN anyone. Take Note: Bank won’t ask you about your PIN.";
+
+// Confirm Pin
+"confirm_pin_title" = "Confirm App PIN again";
+"confirm_pin_description" = "Don’t share this PIN anyone. Take Note: Bank won’t ask you about your PIN.";
+
+// Success Action
+"success_title" = "Awesome 👍";
+"success_description" = "Your account have created successfully.";
+
+"login_with_pin_button" = "LOGIN with PIN";
+"login_with_faceID_button" = "LOGIN with Face ID";
+
+// Enter Pin Code
+
+"enter_pin_code_label" = "ENTER LOGIN PIN";
+"cannot_login_button" = "Cannot login?";

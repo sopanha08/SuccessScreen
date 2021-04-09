@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessActiveView" customModule="sathapana_mobile_app" customModuleProvider="target">
+            <connections>
+                <outlet property="detailLabel" destination="1Iw-EZ-8RE" id="ap1-is-mzt"/>
+                <outlet property="successImage" destination="t8a-4A-5I0" id="1ee-Uk-Hh8"/>
+                <outlet property="titleLabel" destination="qSR-Ei-4xb" id="C2a-Sg-01b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="510"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="SuccessImage" translatesAutoresizingMaskIntoConstraints="NO" id="t8a-4A-5I0">
+                    <rect key="frame" x="57" y="0.0" width="300" height="385"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="D15-fU-VVc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awesome 👍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSR-Ei-4xb">
+                    <rect key="frame" x="20" y="405" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="kkh-uZ-OpV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                    <color key="textColor" red="0.23137254901960785" green="0.59215686274509804" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activation your mobile banking successfully" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Iw-EZ-8RE">
+                    <rect key="frame" x="20" y="445" width="374" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="1Hy-Oi-yhZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1Iw-EZ-8RE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="1b3-AD-xap"/>
+                <constraint firstItem="1Iw-EZ-8RE" firstAttribute="top" secondItem="qSR-Ei-4xb" secondAttribute="bottom" id="6Ub-hT-2Kd"/>
+                <constraint firstItem="t8a-4A-5I0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HFf-mT-k2i"/>
+                <constraint firstItem="qSR-Ei-4xb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Ylc-Q3-ymZ"/>
+                <constraint firstItem="qSR-Ei-4xb" firstAttribute="top" secondItem="t8a-4A-5I0" secondAttribute="bottom" constant="20" id="bKq-Yn-lYl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Iw-EZ-8RE" secondAttribute="trailing" constant="20" id="eJi-CX-RaU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Iw-EZ-8RE" secondAttribute="bottom" constant="20" id="ulH-JY-g3U"/>
+                <constraint firstItem="t8a-4A-5I0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xOa-4d-EH9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qSR-Ei-4xb" secondAttribute="trailing" constant="20" id="xPt-w2-g2k"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-57.589285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SuccessImage" width="95" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

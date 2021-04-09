@@ -1,0 +1,6 @@
+framework module Pods_sathapana_mobile_app {
+  umbrella header "Pods-sathapana-mobile-app-umbrella.h"
+
+  export *
+  module * { export * }
+}

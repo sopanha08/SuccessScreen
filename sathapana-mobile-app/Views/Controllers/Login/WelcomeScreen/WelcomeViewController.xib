@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="sathapana_mobile_app" customModuleProvider="target">
+            <connections>
+                <outlet property="activateButton" destination="vhA-ZZ-gMf" id="bCv-lC-BOP"/>
+                <outlet property="createNewAccountButton" destination="TWg-7r-L9e" id="kbR-Ar-oQP"/>
+                <outlet property="loginWithPhoneNumberButton" destination="rDn-ap-HTu" id="aiQ-xh-RQ5"/>
+                <outlet property="view" destination="iN0-l3-epB" id="FrR-kD-OP6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_screen_background" translatesAutoresizingMaskIntoConstraints="NO" id="cRy-iz-BpW">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_company_logo" translatesAutoresizingMaskIntoConstraints="NO" id="w9v-6y-kzp">
+                    <rect key="frame" x="97.5" y="88" width="219" height="76"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VERSION 3.0.0 © 2021 SATHAPANA BANK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rU-IT-Xvz">
+                    <rect key="frame" x="110" y="850" width="194" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="Hqo-2P-cvS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="txC-sp-pef">
+                    <rect key="frame" x="32" y="643" width="350" height="186"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDn-ap-HTu" customClass="CustomButton" customModule="sathapana_mobile_app" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="jLf-T7-XQ7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                            <state key="normal">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isWhite" value="YES"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="imageForNormal" value="login_screen_login_image"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapLoginWithPhoneNumber" destination="-1" eventType="touchUpInside" id="A87-U4-Iig"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhA-ZZ-gMf" customClass="CustomButton" customModule="sathapana_mobile_app" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="68" width="350" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="PKY-Qe-x8M"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isWhite" value="YES"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="imageForNormal" value="login_scree_activiation_image"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapActivation" destination="-1" eventType="touchUpInside" id="WvA-BQ-fl9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWg-7r-L9e" customClass="CustomButton" customModule="sathapana_mobile_app" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="136" width="350" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="3fx-yz-d4O"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isWhite" value="NO"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="imageForNormal" value="login_screen_create_accoutnImage"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapCreateNewAccount" destination="-1" eventType="touchUpInside" id="Sxc-2c-bPN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rDn-ap-HTu" firstAttribute="leading" secondItem="txC-sp-pef" secondAttribute="leading" id="Aip-0B-hGu"/>
+                        <constraint firstItem="TWg-7r-L9e" firstAttribute="leading" secondItem="txC-sp-pef" secondAttribute="leading" id="P0p-z0-i8p"/>
+                        <constraint firstItem="vhA-ZZ-gMf" firstAttribute="leading" secondItem="txC-sp-pef" secondAttribute="leading" id="Xpx-l1-XjH"/>
+                        <constraint firstAttribute="trailing" secondItem="TWg-7r-L9e" secondAttribute="trailing" id="ced-Ko-44i"/>
+                        <constraint firstAttribute="trailing" secondItem="rDn-ap-HTu" secondAttribute="trailing" id="v90-E0-KEg"/>
+                        <constraint firstAttribute="trailing" secondItem="vhA-ZZ-gMf" secondAttribute="trailing" id="xoC-Jp-U7i"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cRy-iz-BpW" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="Cwt-Rp-gNP"/>
+                <constraint firstItem="w9v-6y-kzp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="44" id="Fms-Dk-oh4"/>
+                <constraint firstItem="8rU-IT-Xvz" firstAttribute="top" secondItem="txC-sp-pef" secondAttribute="bottom" constant="21" id="Ruw-ok-euK"/>
+                <constraint firstItem="cRy-iz-BpW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Sbw-TB-rzg"/>
+                <constraint firstItem="cRy-iz-BpW" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Thv-Os-jTV"/>
+                <constraint firstItem="cRy-iz-BpW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UFY-0a-qgv"/>
+                <constraint firstItem="txC-sp-pef" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="WOf-Ls-vX8"/>
+                <constraint firstItem="8rU-IT-Xvz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aCC-km-CGp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="txC-sp-pef" secondAttribute="trailing" constant="32" id="c7M-i0-Wns"/>
+                <constraint firstItem="8rU-IT-Xvz" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="nh4-2o-4T9"/>
+                <constraint firstItem="w9v-6y-kzp" firstAttribute="centerX" secondItem="cRy-iz-BpW" secondAttribute="centerX" id="skX-t8-GAz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="76.811594202898561" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="TWg-7r-L9e">
+            <size key="intrinsicContentSize" width="30" height="27"/>
+        </designable>
+        <designable name="rDn-ap-HTu">
+            <size key="intrinsicContentSize" width="30" height="27"/>
+        </designable>
+        <designable name="vhA-ZZ-gMf">
+            <size key="intrinsicContentSize" width="30" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="login_scree_activiation_image" width="19" height="19"/>
+        <image name="login_screen_background" width="375" height="812"/>
+        <image name="login_screen_create_accoutnImage" width="19" height="22"/>
+        <image name="login_screen_login_image" width="21" height="21"/>
+        <image name="white_company_logo" width="219" height="76"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

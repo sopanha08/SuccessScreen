@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessPayBillsViewController" customModule="sathapana_mobile_app" customModuleProvider="target">
+            <connections>
+                <outlet property="gotoHomeScreen" destination="IBT-3p-pT4" id="RF5-y3-2AP"/>
+                <outlet property="headerView" destination="JiN-XP-94Q" id="I31-Hb-A31"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewTransactionDetail" destination="NsP-Yc-dpo" id="TrH-yr-vCk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Success_PayBill_Background" translatesAutoresizingMaskIntoConstraints="NO" id="4iZ-Dy-EP3">
+                    <rect key="frame" x="180" y="400" width="234" height="496"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="234" id="p9h-2e-VwP"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JiN-XP-94Q" customClass="SuccessPayBillsView" customModule="sathapana_mobile_app" customModuleProvider="target">
+                    <rect key="frame" x="20" y="100" width="374" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="HTg-lI-NWl"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsP-Yc-dpo" customClass="CustomButton" customModule="sathapana_mobile_app" customModuleProvider="target">
+                    <rect key="frame" x="32" y="712" width="350" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Sve-Jf-4oE"/>
+                        <constraint firstAttribute="width" constant="350" id="TCc-OR-xnQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="imageForNormal" value="invoice"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleForNormal" value="Login With Face ID"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isWhite" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="viewTransaction:" destination="-1" eventType="touchUpInside" id="1BX-Z0-WuN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBT-3p-pT4" customClass="CustomButton" customModule="sathapana_mobile_app" customModuleProvider="target">
+                    <rect key="frame" x="32" y="782" width="350" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="h4G-aM-68x"/>
+                        <constraint firstAttribute="height" constant="50" id="ruL-aY-xCX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="imageForNormal" value="home"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleForNormal" value="LOGIN with PIN"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isWhite" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="goHome:" destination="-1" eventType="touchUpInside" id="Y05-gy-viq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IBT-3p-pT4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="1xx-Mj-4co"/>
+                <constraint firstItem="4iZ-Dy-EP3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6i1-Yx-raR"/>
+                <constraint firstItem="IBT-3p-pT4" firstAttribute="top" secondItem="NsP-Yc-dpo" secondAttribute="bottom" constant="20" id="BRh-8z-ZrN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IBT-3p-pT4" secondAttribute="bottom" constant="30" id="Cgf-gg-fmH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IBT-3p-pT4" secondAttribute="trailing" constant="32" id="J7o-IZ-YCt"/>
+                <constraint firstItem="NsP-Yc-dpo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Mdl-Ow-zMM"/>
+                <constraint firstItem="JiN-XP-94Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="56" id="WSg-pn-8py"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JiN-XP-94Q" secondAttribute="trailing" constant="20" id="gYS-2u-2h6"/>
+                <constraint firstAttribute="bottom" secondItem="4iZ-Dy-EP3" secondAttribute="bottom" id="iJ4-xV-QFD"/>
+                <constraint firstItem="4iZ-Dy-EP3" firstAttribute="top" secondItem="JiN-XP-94Q" secondAttribute="bottom" id="uU6-C6-oux"/>
+                <constraint firstItem="JiN-XP-94Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xgy-Lh-XIE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NsP-Yc-dpo" secondAttribute="trailing" constant="32" id="xyZ-Qy-F4B"/>
+            </constraints>
+            <point key="canvasLocation" x="-197" y="100"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="IBT-3p-pT4">
+            <size key="intrinsicContentSize" width="30" height="27"/>
+        </designable>
+        <designable name="NsP-Yc-dpo">
+            <size key="intrinsicContentSize" width="30" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Success_PayBill_Background" width="384" height="443.5"/>
+        <image name="home" width="22.5" height="21.5"/>
+        <image name="invoice" width="18.5" height="24.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

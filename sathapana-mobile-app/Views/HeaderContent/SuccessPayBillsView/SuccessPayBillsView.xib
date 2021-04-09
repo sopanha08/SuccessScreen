@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessPayBillsView" customModule="sathapana_mobile_app" customModuleProvider="target">
+            <connections>
+                <outlet property="currencyLabel" destination="63p-bz-7zF" id="r7a-oq-Cce"/>
+                <outlet property="successPayBillsImage" destination="dFJ-fZ-kcF" id="vK9-np-low"/>
+                <outlet property="titleLabel" destination="uy7-KG-iha" id="HKQ-dF-ScF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="374"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sc2-cD-Wh6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="374"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuccessPayBillsImage" translatesAutoresizingMaskIntoConstraints="NO" id="dFJ-fZ-kcF">
+                            <rect key="frame" x="65" y="0.0" width="284" height="198"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uy7-KG-iha">
+                            <rect key="frame" x="49.5" y="216" width="315" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="315" id="4nY-QG-Gh0"/>
+                                <constraint firstAttribute="height" constant="54" id="8ti-o5-zWy"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="EDC PHNOM PENH PAY SUCCESS">
+                                    <attributes>
+                                        <color key="NSColor" red="0.23137254901960785" green="0.59215686274509804" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KHR 14,000.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63p-bz-7zF">
+                            <rect key="frame" x="20" y="292" width="374" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="obu-r0-Q0o"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="dFJ-fZ-kcF" firstAttribute="leading" secondItem="sc2-cD-Wh6" secondAttribute="leading" constant="65" id="6uC-9N-Cy5"/>
+                        <constraint firstAttribute="trailing" secondItem="dFJ-fZ-kcF" secondAttribute="trailing" constant="65" id="9jW-Tf-YvH"/>
+                        <constraint firstItem="dFJ-fZ-kcF" firstAttribute="top" secondItem="sc2-cD-Wh6" secondAttribute="top" id="Cvd-Sn-frT"/>
+                        <constraint firstItem="uy7-KG-iha" firstAttribute="top" secondItem="dFJ-fZ-kcF" secondAttribute="bottom" constant="18" id="OD0-We-E87"/>
+                        <constraint firstAttribute="bottom" secondItem="63p-bz-7zF" secondAttribute="bottom" constant="60" id="jjg-er-qqR"/>
+                        <constraint firstItem="63p-bz-7zF" firstAttribute="leading" secondItem="sc2-cD-Wh6" secondAttribute="leading" constant="20" id="kOK-wM-YDd"/>
+                        <constraint firstItem="63p-bz-7zF" firstAttribute="top" secondItem="uy7-KG-iha" secondAttribute="bottom" constant="22" id="lq6-wC-s1y"/>
+                        <constraint firstAttribute="trailing" secondItem="63p-bz-7zF" secondAttribute="trailing" constant="20" id="qOa-A8-TCt"/>
+                        <constraint firstItem="uy7-KG-iha" firstAttribute="centerX" secondItem="sc2-cD-Wh6" secondAttribute="centerX" id="tBh-Tj-TrN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sc2-cD-Wh6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="I82-zd-k1e"/>
+                <constraint firstAttribute="bottom" secondItem="sc2-cD-Wh6" secondAttribute="bottom" id="PDt-rl-f0T"/>
+                <constraint firstItem="sc2-cD-Wh6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SoY-T7-r2I"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sc2-cD-Wh6" secondAttribute="trailing" id="jAl-wh-0tB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-100" y="7"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SuccessPayBillsImage" width="130" height="130"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
